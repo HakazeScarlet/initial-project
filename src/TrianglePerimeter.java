@@ -6,11 +6,11 @@ public class TrianglePerimeter {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter side A");
-        int sideA = scanner.nextInt();
+        double sideA = scanner.nextInt();
         System.out.println("Enter side B");
-        int sideB = scanner.nextInt();
+        double sideB = scanner.nextInt();
         System.out.println("Enter side C");
-        int sideC = scanner.nextInt();
+        double sideC = scanner.nextInt();
 
         double halfPerimeter = (sideA + sideB + sideC) / 2;
         double trianglePerimeter = Math.sqrt(halfPerimeter);
