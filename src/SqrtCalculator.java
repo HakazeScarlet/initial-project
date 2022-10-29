@@ -6,8 +6,8 @@ public class SqrtCalculator {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter real number: ");
 
-        String strDoubleNumber = scanner.nextLine(); // read string from terminal
-        double number = Double.parseDouble(strDoubleNumber); // convert string to double number
+        String strDoubleNumber = scanner.nextLine();
+        double number = Double.parseDouble(strDoubleNumber);
 
         double sqrt = Math.sqrt(number);
 
