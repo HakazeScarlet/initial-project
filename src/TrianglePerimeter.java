@@ -14,6 +14,7 @@ public class TrianglePerimeter {
 
         double halfPerimeter = (sideA + sideB + sideC) / 2;
         double trianglePerimeter = Math.sqrt(halfPerimeter);
+
         System.out.println("Perimeter of the Triangle: " + trianglePerimeter);
     }
 }
