@@ -9,10 +9,11 @@ public class SwapVariablesWithThirdVariable {
         int variableA = scanner.nextInt();
         System.out.println("Enter variable B: ");
         int variableB = scanner.nextInt();
-        int variableC = variableA;
 
+        int variableC = variableA;
         variableA = variableB;
         variableB = variableC;
+
         System.out.println("New variable A is: " + variableA);
         System.out.println("New variable B is: " + variableB);
     }

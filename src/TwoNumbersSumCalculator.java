@@ -10,8 +10,6 @@ public class TwoNumbersSumCalculator {
         System.out.println("enter second number: ");
         int secondNum = scanner.nextInt();
 
-        int sum = firstNum + secondNum;
-
-        System.out.println("result is: " + sum);
+        System.out.println("result is: " + (firstNum + secondNum));
     }
 }
