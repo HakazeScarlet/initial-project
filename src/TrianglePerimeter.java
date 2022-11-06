@@ -6,13 +6,14 @@ public class TrianglePerimeter {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter side A");
-        double sideA = scanner.nextInt();
+        int sideA = scanner.nextInt();
         System.out.println("Enter side B");
-        double sideB = scanner.nextInt();
+        int sideB = scanner.nextInt();
         System.out.println("Enter side C");
-        double sideC = scanner.nextInt();
+        int sideC = scanner.nextInt();
 
-        double halfPerimeter = (sideA + sideB + sideC) / 2;
+        double halfPerimeter = (double) (sideA + sideB + sideC) / 2;
+//        double halfPerimeter = (sideA + sideB + sideC) / 2.0;
         double trianglePerimeter = Math.sqrt(halfPerimeter);
 
         System.out.println("Perimeter of the Triangle: " + trianglePerimeter);

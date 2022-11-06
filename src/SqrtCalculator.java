@@ -7,7 +7,13 @@ public class SqrtCalculator {
         System.out.println("Enter real number: ");
 
         String strDoubleNumber = scanner.nextLine();
-        double number = Double.parseDouble(strDoubleNumber);
+        double number = Double.parseDouble(strDoubleNumber); // parse = convert
+
+        // wrappers:
+        // double - Double
+        // long - Long
+        // int - Integer
+        // ...
 
         double sqrt = Math.sqrt(number);
 
