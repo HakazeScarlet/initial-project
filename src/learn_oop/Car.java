@@ -28,8 +28,9 @@ public class Car {
 // 1. OOP (encapsulation, inheritance)
 // 2. Objects in Java
 // 3. null in Java
-// 4. See videos 1-6
-// 5. See examples about OOP in Java
+// 4. new in Java
+// 5. See videos 1-6
+// 6. See examples about OOP in Java
 
 
 // Oracle, Baeldung, StackOverflow
