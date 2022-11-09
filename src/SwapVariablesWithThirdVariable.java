@@ -13,6 +13,7 @@ public class SwapVariablesWithThirdVariable {
 
         variableA = variableB;
         variableB = variableC;
+
         System.out.println("New variable A is: " + variableA);
         System.out.println("New variable B is: " + variableB);
     }

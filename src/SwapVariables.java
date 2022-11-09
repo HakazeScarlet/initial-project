@@ -13,6 +13,7 @@ public class SwapVariables {
         variable1 = variable2 + variable1;
         variable2 = variable1 - variable2;
         variable1 = variable1 - variable2;
+
         System.out.println("New variable 1 is: " + variable1);
         System.out.println("New variable 2 is: " + variable2);
     }
