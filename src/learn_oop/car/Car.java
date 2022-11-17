@@ -1,4 +1,4 @@
-package learn_oop;
+package learn_oop.car;
 
 // schema
 public class Car {
@@ -10,6 +10,11 @@ public class Car {
     private Integer temperature; // by default is null
     private int speed; // by default is 0
     private int acceleration;
+    private Engine engine;
+
+    public Car() {
+
+    }
 
     // constructor
     public Car(int initialSpeed) {
@@ -25,12 +30,14 @@ public class Car {
     }
 }
 
-// 1. OOP (encapsulation, inheritance)
-// 2. Objects in Java
-// 3. null in Java
-// 4. new in Java
-// 5. See videos 1-6
-// 6. See examples about OOP in Java
+
+// 1. null in Java
+// 2. See videos 5-6
+// 3. See examples about OOP in Java
 
 
 // Oracle, Baeldung, StackOverflow
+
+
+// client (username, email) -> server (username, email) -> database (User table - username, email)
+// server: Controller (class1) -> Service (class2) -> Repository (class3)

@@ -1,4 +1,4 @@
-package learn_oop;
+package learn_oop.car;
 
 // inheritance
 public class Audi extends Car {
