@@ -11,6 +11,9 @@ public class Reader {
     private String dateOfBirth;
     private int phoneNumber;
     private int amountOfBooks;
+    private String bookTitle;
+
+    private List<Reader> readers = new ArrayList<>();
 
     public Reader(String fullName) {
         this.fullName = fullName;
@@ -40,6 +43,15 @@ public class Reader {
         System.out.println(fullName + " return book(s): " + book);
     }
 
-    List<Reader> readers = new ArrayList<>();
+    public String getFullName() { return fullName; }
 
+    public void setFullName(String fullName) { this.fullName = fullName; }
+
+    public int getAmountOfBooks() { return amountOfBooks; }
+
+    public void setAmountOfBooks(int amountOfBooks) { this.amountOfBooks = amountOfBooks; }
+
+    public String getBookTitle() { return bookTitle; }
+
+    public void setBookTitle(String bookTitle) { this.bookTitle = bookTitle; }
 }
