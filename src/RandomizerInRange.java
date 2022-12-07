@@ -18,7 +18,7 @@ public class RandomizerInRange {
     // method returned type: (int, String, Car, int[], List<Double>, ...) OR void type
     // name of method: getNumber
     // method parameters: (int from, int to)
-    // method body: {...}; scope - https://en.wikipedia.org/wiki/Scope_(computer_science)
+    // method body: {...}; visibility scope - https://en.wikipedia.org/wiki/Scope_(computer_science)
     // returned value: return something
 
     // type name(parameters...) { return ... }
