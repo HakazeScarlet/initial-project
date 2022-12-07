@@ -6,15 +6,10 @@ public class DataStructuresExample {
 
     public static void main(String[] args) {
         arrayExample();
-
         listExample();
-
         stackExample();
-
         queueExample();
-
         mapExample();
-
         setExample();
     }
 
@@ -94,4 +89,23 @@ public class DataStructuresExample {
 
     // String ... arr -> 1, 2, 3, 5 => [1, 2, 3, 5]
     // String[] arr -> [1, 2, 3, 5];
+
+    private static void test20221207() {
+//        map -> key, value;
+//        set -> key;
+
+        Set<Integer> integers = new HashSet<>();
+        integers.add(3);
+
+        Set<Integer> tree = new TreeSet<>();
+
+
+        // -------------------------
+
+        int[][][] arr3 = new int[3][3][3];
+        int[][] arr2 = new int[3][3];
+
+        List<List<List<Integer>>> list3 = new ArrayList<>();
+        List<List<Integer>> list2 = new ArrayList<>();
+    }
 }
