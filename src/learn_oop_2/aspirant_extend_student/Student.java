@@ -9,8 +9,16 @@ public class Student {
     private int sumOfScholarship;
 
     int getScholarship() {
+
+        if (averageMark == 5.0) {
+            sumOfScholarship = 100;
+        } else {
+            sumOfScholarship = 80;
+        }
+
         return sumOfScholarship;
     }
+
 }
 
 
