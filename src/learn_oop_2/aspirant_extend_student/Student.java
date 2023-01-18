@@ -2,11 +2,11 @@ package learn_oop_2.aspirant_extend_student;
 
 public class Student {
 
-    private String fullName;
-    private String lastName;
-    private char group;
-    private double averageMark;
-    private int sumOfScholarship;
+    protected String fullName;
+    protected String lastName;
+    protected char group;
+    protected double averageMark;
+    protected int sumOfScholarship;
 
     int getScholarship() {
 
