@@ -8,8 +8,10 @@ public class Aspirant extends Student{
 
         if (averageMark == 5.0) {
             sumOfScholarship = 200;
+            System.out.println("Sum of scholarship of " + fullName + " is: ");
         } else {
             sumOfScholarship = 180;
+            System.out.println("Sum of scholarship of " + fullName + " is: ");
         }
 
         return sumOfScholarship;

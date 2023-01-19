@@ -12,8 +12,10 @@ public class Student {
 
         if (averageMark == 5.0) {
             sumOfScholarship = 100;
+            System.out.println("Sum of scholarship of " + fullName + " is: ");
         } else {
             sumOfScholarship = 80;
+            System.out.println("Sum of scholarship of " + fullName + " is: ");
         }
         return sumOfScholarship;
     }
