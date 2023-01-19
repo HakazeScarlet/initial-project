@@ -15,7 +15,6 @@ public class Student {
         } else {
             sumOfScholarship = 80;
         }
-
         return sumOfScholarship;
     }
 
