@@ -12,20 +12,25 @@ public class Car {
     Driver driver1 = new Driver();
     Engine engine1 = new Engine();
 
-    void start() {
+    protected void start() {
         System.out.println("Go");
     }
 
-    void stop() {
+    protected void stop() {
         System.out.println("Stop");
     }
 
-    void turnRight() {
+    protected void turnRight() {
         System.out.println("Turn to right");
     }
 
-    void turnLeft() {
+    protected void turnLeft() {
         System.out.println("Turn to left");
+    }
+
+    public String toString() {
+
+        return
     }
 
 }

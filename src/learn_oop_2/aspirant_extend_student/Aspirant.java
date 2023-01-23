@@ -11,7 +11,7 @@ public class Aspirant extends Student{
             System.out.println("Sum of scholarship of " + fullName + " is: ");
         } else {
             sumOfScholarship = 180;
-            System.out.println("Sum of scholarship of " + fullName + " is: ");
+            System.out.println("Sum of scholarship of  " + fullName + " is: ");
         }
 
         return sumOfScholarship;
