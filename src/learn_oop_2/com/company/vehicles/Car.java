@@ -11,5 +11,21 @@ public class Car {
 
     Driver driver1 = new Driver();
     Engine engine1 = new Engine();
-    
+
+    void start() {
+        System.out.println("Go");
+    }
+
+    void stop() {
+        System.out.println("Stop");
+    }
+
+    void turnRight() {
+        System.out.println("Turn to right");
+    }
+
+    void turnLeft() {
+        System.out.println("Turn to left");
+    }
+
 }
