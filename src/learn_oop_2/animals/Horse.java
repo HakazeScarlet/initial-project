@@ -2,6 +2,8 @@ package learn_oop_2.animals;
 
 public class Horse extends Animal {
 
+    private int speed;
+
     Animal horse = new Animal();
 
     protected void makeNoise() {
@@ -9,6 +11,6 @@ public class Horse extends Animal {
     }
 
     protected void eat() {
-        System.out.println("The " + horse + " eat a food");
+        System.out.println("The " + horse + " eat horse's " + food);
     }
 }
