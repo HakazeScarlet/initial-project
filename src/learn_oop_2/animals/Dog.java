@@ -5,7 +5,7 @@ public class Dog extends Animal {
     Animal dog = new Animal();
 
     protected void makeNoise() {
-        System.out.println("The " + dog + " say Wow");
+        System.out.println("The " + dog + " say Woof");
     }
 
     protected void eat() {
