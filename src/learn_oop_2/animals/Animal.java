@@ -37,12 +37,4 @@ public class Animal {
     public void setAnimal(String animal) {
         this.animal = animal;
     }
-
-    public void setFood(String food) {
-        this.food = food;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
 }
