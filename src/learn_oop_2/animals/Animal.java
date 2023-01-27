@@ -6,10 +6,6 @@ public class Animal {
     protected String food;
     protected String location;
 
-    public Animal() {
-
-    }
-
     protected void makeNoise() {
         System.out.println("The " + animal + " make a noise");
     }
@@ -26,12 +22,20 @@ public class Animal {
         this.location = location;
     }
 
+    public String getAnimal() {
+        return animal;
+    }
+
     public String getFood() {
         return food;
     }
 
     public String getLocation() {
         return location;
+    }
+
+    public void setAnimal(String animal) {
+        this.animal = animal;
     }
 
     public void setFood(String food) {

@@ -2,7 +2,11 @@ package learn_oop_2.animals;
 
 public class Dog extends Animal {
 
-        Animal dog = new Animal();
+    public Dog(String food, String location) {
+        super(food, location);
+    }
+
+    Animal dog = new Animal(food, location);
 
     protected void makeNoise() {
         System.out.println("The " + dog + " say Woof");

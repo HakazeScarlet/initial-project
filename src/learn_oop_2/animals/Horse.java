@@ -4,7 +4,11 @@ public class Horse extends Animal {
 
     private int speed;
 
-    Animal horse = new Animal();
+    public Horse(String food, String location) {
+        super(food, location);
+    }
+
+    Animal horse = new Animal(food, location);
 
     protected void makeNoise() {
         System.out.println("The " + horse + " say i-go-go");

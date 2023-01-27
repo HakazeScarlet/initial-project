@@ -4,7 +4,11 @@ public class Cat extends Animal {
 
     private double jumpHeight;
 
-    Animal cat = new Animal();
+    public Cat(String food, String location) {
+        super(food, location);
+    }
+
+    Animal cat = new Animal(food, location);
 
     protected void makeNoise() {
         System.out.println("The " + cat + " say Meow");
