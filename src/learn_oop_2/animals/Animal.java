@@ -8,4 +8,11 @@ abstract class Animal {
     abstract void eat();
     abstract String getDescription();
 
+    String getName() {
+        return name;
+    }
+
+    void setName(String name) {
+        this.name = name;
+    }
 }

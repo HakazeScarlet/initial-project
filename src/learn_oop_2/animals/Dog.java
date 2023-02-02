@@ -2,6 +2,10 @@ package learn_oop_2.animals;
 
 class Dog extends Animal {
 
+    public Dog() {
+
+    }
+
     void makeNoise() {
         System.out.println("Dog say woof");
     }
@@ -11,5 +15,6 @@ class Dog extends Animal {
     String getDescription() {
         return name;
     }
+
 }
 

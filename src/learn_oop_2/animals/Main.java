@@ -5,5 +5,9 @@ public class Main {
 
         Animal animalArr[] = new Animal[3];
 
+        animalArr[0] = new Cat();
+        animalArr[1] = new Chicken();
+        animalArr[2] = new Dog();
+
     }
 }
