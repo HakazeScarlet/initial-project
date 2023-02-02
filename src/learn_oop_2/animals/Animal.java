@@ -6,6 +6,6 @@ abstract class Animal {
 
     abstract void makeNoise();
     abstract void eat();
-    abstract void getDescription();
+    abstract String getDescription();
 
 }
