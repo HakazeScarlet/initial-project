@@ -2,8 +2,8 @@ package learn_oop_2.animals;
 
 class Chicken extends Animal{
 
-    public Chicken() {
-
+    public Chicken(String name) {
+        this.name = name;
     }
 
     void makeNoise() {

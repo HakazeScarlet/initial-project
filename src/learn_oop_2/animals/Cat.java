@@ -2,8 +2,8 @@ package learn_oop_2.animals;
 
 class Cat extends Animal {
 
-    public Cat() {
-
+    public Cat(String name) {
+        this.name = name;
     }
 
     void makeNoise() {
