@@ -3,7 +3,7 @@ package learn_oop_2.figures;
 class Rectangle extends Shape{
 
     @Override
-    protected void draw() {
+    public void draw() {
 
     }
 

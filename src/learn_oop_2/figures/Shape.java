@@ -5,7 +5,7 @@ abstract class Shape {
     protected String color;
     protected int coordinate;
 
-    abstract protected void draw();
+    abstract public void draw();
 
     public String getColor() {
         return color;

@@ -8,5 +8,10 @@ public class Main {
         shapeArr[0] = new Circle(23, "red");
         shapeArr[1] = new Rectangle(12, "black");
 
+        for (int s = 0; s < shapeArr.length; s++) {
+            shapeArr[0].draw();
+            shapeArr[1].draw();
+        }
+
     }
 }
