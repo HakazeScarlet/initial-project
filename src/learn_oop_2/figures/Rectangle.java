@@ -1,5 +1,14 @@
 package learn_oop_2.figures;
 
-abstract class Rectangle extends Shape{
+class Rectangle extends Shape{
 
+    @Override
+    protected void draw() {
+
+    }
+
+    public Rectangle (int coordinate, String color) {
+        this.coordinate = coordinate;
+        this.color = color;
+    }
 }
