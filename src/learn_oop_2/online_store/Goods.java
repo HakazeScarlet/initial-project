@@ -6,16 +6,21 @@ class Goods {
     private double price;
     private double rating;
 
+    public Goods(String name, double price, double rating) {
+        this.name = name;
+        this.price = price;
+        this.rating = rating;
+    }
+
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public double getPrice() {
+        return price;
     }
 
-    Goods (String name) {
-        this.name = name;
+    public double getRating() {
+        return rating;
     }
-
 }
