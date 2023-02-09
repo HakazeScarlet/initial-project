@@ -26,6 +26,5 @@ class Main {
         for (Goods item : basketArr) {
             System.out.println(item);
         }
-
     }
 }
