@@ -4,15 +4,17 @@ abstract class Animal {
 
     protected String name;
 
-    abstract void makeNoise();
-    abstract void eat();
-    abstract String getDescription();
+    protected abstract void makeNoise();
 
-    String getName() {
+    protected abstract void eat();
+
+    protected abstract String getDescription();
+
+    public String getName() {
         return name;
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 }
