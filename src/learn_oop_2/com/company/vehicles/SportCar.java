@@ -7,7 +7,7 @@ public class SportCar extends Car {
 
     private double maxSpeed;
 
-    private SportCar(Driver outerDriver, Engine outerEngine) {
-        super(outerDriver, outerEngine);
+    private SportCar(Driver driver, Engine engine) {
+        super(driver, engine);
     }
 }

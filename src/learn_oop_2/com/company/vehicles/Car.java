@@ -76,7 +76,7 @@ class Car {
                 ", carClass='" + carClass + '\'' +
                 ", weight=" + weight +
                 ", driver=" + driver +
-                ", engine=" + engine +
+                ", engine=" + engine.getCompany() +
                 '}';
     }
 }
