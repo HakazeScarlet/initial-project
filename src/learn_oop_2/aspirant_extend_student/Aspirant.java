@@ -1,19 +1,15 @@
 package learn_oop_2.aspirant_extend_student;
 
-class Aspirant extends Student{
+class Aspirant extends Student {
+
+    private static final int COMMON_SCHOLARSHIP = 180;
+    private static final int INCREASED_SCHOLARSHIP = 200;
 
     private boolean scientificWork;
 
     public int getScholarship() {
-
-        if (averageMark == 5.0) {
-            sumOfScholarship = 200;
-            System.out.println("Sum of scholarship of " + fullName + " is: ");
-        } else {
-            sumOfScholarship = 180;
-            System.out.println("Sum of scholarship of  " + fullName + " is: ");
-        }
-
-        return sumOfScholarship;
+        return averageMark == GREAT_AVERAGE_MARK
+            ? INCREASED_SCHOLARSHIP
+            : COMMON_SCHOLARSHIP;
     }
 }
