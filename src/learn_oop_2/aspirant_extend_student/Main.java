@@ -1,20 +1,20 @@
 package learn_oop_2.aspirant_extend_student;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
 
         Student student1 = new Student();
-            student1.fullName = "Korj";
-            student1.averageMark = 4.8;
+            student1.setFullName("Korj");
+            student1.setAverageMark(4.8);
         Student student2 = new Student();
-            student2.averageMark = 5;
-            student2.fullName = "Noj";
+            student2.setFullName("Noj");
+            student2.setAverageMark(5.0);
         Student aspirant1 = new Aspirant();
-            aspirant1.fullName = "Serj";
-            aspirant1.averageMark = 5;
+            aspirant1.setFullName("Serj");
+            aspirant1.setAverageMark(4.7);
         Aspirant aspirant2 = new Aspirant();
-            aspirant2.fullName = "Morj";
-            aspirant2.averageMark = 4.0;
+            aspirant2.setFullName("Morj");
+            aspirant2.setAverageMark(5.0);
 
         Student[] students = new Student[5];
 

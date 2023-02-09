@@ -2,17 +2,19 @@ package learn_oop_2.animals;
 
 class Cat extends Animal {
 
-    public Cat(String name) {
+    protected Cat(String name) {
         this.name = name;
     }
 
-    void makeNoise() {
+    public void makeNoise() {
         System.out.println("Cat say meow");
     }
-    void eat() {
+
+    public void eat() {
         System.out.println("Cat eat a fish");
     }
-    String getDescription() {
+
+    public String getDescription() {
         return name;
     }
 
