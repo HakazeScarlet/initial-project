@@ -1,6 +1,6 @@
 package learn_oop_2.online_store;
 
-class User{
+class User {
 
     private String login;
     private String password;

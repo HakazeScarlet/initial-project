@@ -3,15 +3,15 @@ package learn_oop_2.library_readers;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Reader {
+class Reader {
 
-    private String fullName;
-    private int ticketID;
-    private String faculty;
-    private String dateOfBirth;
-    private int phoneNumber;
-    private int amountOfBooks;
-    private String bookTitle;
+    protected String fullName;
+    protected int ticketID;
+    protected String faculty;
+    protected String dateOfBirth;
+    protected int phoneNumber;
+    protected int amountOfBooks;
+    protected String bookTitle;
 
     private List<Reader> readers = new ArrayList<>();
 

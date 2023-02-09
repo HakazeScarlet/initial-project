@@ -7,7 +7,7 @@ public class Lorry extends Car {
 
     private double carrying;
 
-    public Lorry(Driver outerDriver, Engine outerEngine) {
+    private Lorry(Driver outerDriver, Engine outerEngine) {
 
         super(outerDriver, outerEngine);
 

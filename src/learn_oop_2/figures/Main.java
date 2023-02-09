@@ -1,9 +1,8 @@
 package learn_oop_2.figures;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) {
-
         Shape[] shapeArr = new Shape[2];
         shapeArr[0] = new Circle(23, "red");
         shapeArr[1] = new Rectangle(12, "black");

@@ -1,26 +1,26 @@
 package learn_oop_2.phone;
 
-public class Phone {
+class Phone {
 
     private int number;
     private String model;
     private double weight;
 
-    public Phone(int userNumber, String userModel, double userWeight) {
+    protected Phone(int userNumber, String userModel, double userWeight) {
         this(userNumber, userModel);
         this.weight = userWeight;
     }
 
-    public Phone(int userNumber, String userModel) {
+    protected Phone(int userNumber, String userModel) {
         this.number = userNumber;
         this.model = userModel;
     }
 
-    public Phone() {
+    protected Phone() {
 
     }
 
-    int getNumber() {
+    public int getNumber() {
         return number;
     }
 

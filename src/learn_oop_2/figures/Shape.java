@@ -22,4 +22,5 @@ abstract class Shape {
     public void setCoordinate(int coordinate) {
         this.coordinate = coordinate;
     }
+
 }
