@@ -6,18 +6,17 @@ class Phone {
     private String model;
     private double weight;
 
-    protected Phone(int userNumber, String userModel, double userWeight) {
+    public Phone(int userNumber, String userModel, double userWeight) {
         this(userNumber, userModel);
         this.weight = userWeight;
     }
 
-    protected Phone(int userNumber, String userModel) {
+    public Phone(int userNumber, String userModel) {
         this.number = userNumber;
         this.model = userModel;
     }
 
-    protected Phone() {
-
+    public Phone() {
     }
 
     public int getNumber() {
