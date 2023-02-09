@@ -8,8 +8,6 @@ public class Lorry extends Car {
     private double carrying;
 
     private Lorry(Driver outerDriver, Engine outerEngine) {
-
         super(outerDriver, outerEngine);
-
     }
 }

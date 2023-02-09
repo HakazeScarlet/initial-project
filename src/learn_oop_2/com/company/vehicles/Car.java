@@ -5,15 +5,32 @@ import learn_oop_2.com.company.professions.Driver;
 
 class Car {
 
+    private final Engine engine;
+
     private String carBrand;
     private String carClass;
     private double weight;
     private Driver driver;
-    private final Engine engine;
 
     public Car(Driver outerDriver, Engine outerEngine) {
         this.driver = outerDriver;
         this.engine = outerEngine;
+    }
+
+    public void start() {
+        System.out.println("Go");
+    }
+
+    public void stop() {
+        System.out.println("Stop");
+    }
+
+    public void turnRight() {
+        System.out.println("Turn right");
+    }
+
+    public void turnLeft() {
+        System.out.println("Turn left");
     }
 
     public void setDriver(Driver driver) {
@@ -50,22 +67,6 @@ class Car {
 
     public Engine getEngine() {
         return engine;
-    }
-
-    protected void start() {
-        System.out.println("Go");
-    }
-
-    protected void stop() {
-        System.out.println("Stop");
-    }
-
-    protected void turnRight() {
-        System.out.println("Turn to right");
-    }
-
-    protected void turnLeft() {
-        System.out.println("Turn to left");
     }
 
     @Override

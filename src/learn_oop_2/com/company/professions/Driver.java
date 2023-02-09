@@ -1,8 +1,6 @@
 package learn_oop_2.com.company.professions;
 
-public class Driver {
+public class Driver extends Person {
 
-    private String fullName;
-    private double drivingExperience;
-
+    private double experience;
 }
