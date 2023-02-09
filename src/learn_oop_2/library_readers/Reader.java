@@ -1,8 +1,5 @@
 package learn_oop_2.library_readers;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class Reader {
 
     protected String fullName;
@@ -13,8 +10,6 @@ class Reader {
     protected int amountOfBooks;
     protected String bookTitle;
 
-    private List<Reader> readers = new ArrayList<>();
-
     public Reader(String fullName) {
         this.fullName = fullName;
     }
@@ -23,13 +18,21 @@ class Reader {
         System.out.println(fullName + " take " + amountOfBooks + " book(s)");
     }
 
-    void takeBook(String bookTitle) {
-        System.out.println(fullName + " take " + bookTitle);
+    void takeBook(String ... bookTitles) {
+        System.out.println(fullName + "take the next books: ");
+        for (String title : bookTitles) {
+            System.out.printf("%s \t", title);
+        }
     }
 
-    void takeBook(Book book) {
-        System.out.println(fullName + " take book(s): " + book);
+    void takeBook(Book ... books) {
+        System.out.println(fullName + "take the next books: ");
+        for (Book book : books) {
+            System.out.printf("%s \t", book.getTitle());
+        }
     }
+
+    // TODO: Correct next 3 methods, see examples above and re-read the task
 
     void returnBook(int amountOfBooks) {
         System.out.println(fullName + " return " + amountOfBooks + " book(s)");
@@ -42,16 +45,4 @@ class Reader {
     void returnBook(Book book) {
         System.out.println(fullName + " return book(s): " + book);
     }
-
-    public String getFullName() { return fullName; }
-
-    public void setFullName(String fullName) { this.fullName = fullName; }
-
-    public int getAmountOfBooks() { return amountOfBooks; }
-
-    public void setAmountOfBooks(int amountOfBooks) { this.amountOfBooks = amountOfBooks; }
-
-    public String getBookTitle() { return bookTitle; }
-
-    public void setBookTitle(String bookTitle) { this.bookTitle = bookTitle; }
 }
