@@ -1,21 +1,23 @@
 package learn_oop_2.animals;
 
-class Chicken extends Animal{
+class Chicken extends Animal {
 
-    protected Chicken(String name) {
+    public Chicken(String name) {
         this.name = name;
     }
 
-    public void makeNoise() {
+    @Override
+    protected void makeNoise() {
         System.out.println("Chicken say ko-ko");
     }
 
-    public void eat() {
+    @Override
+    protected void eat() {
         System.out.println("Chicken eat a corn");
     }
 
-    String getDescription() {
+    @Override
+    protected String getDescription() {
         return name;
     }
-
 }

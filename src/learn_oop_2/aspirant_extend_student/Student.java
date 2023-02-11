@@ -2,6 +2,10 @@ package learn_oop_2.aspirant_extend_student;
 
 class Student {
 
+    private static final int COMMON_SCHOLARSHIP = 80;
+    private static final int INCREASED_SCHOLARSHIP = 100;
+    protected static final double GREAT_AVERAGE_MARK = 5.0;
+
     protected String fullName;
     protected String lastName;
     protected char group;
@@ -9,15 +13,9 @@ class Student {
     protected int sumOfScholarship;
 
     public int getScholarship() {
-
-        if (averageMark == 5.0) {
-            sumOfScholarship = 100;
-            System.out.println("Sum of scholarship of " + fullName + " is: ");
-        } else {
-            sumOfScholarship = 80;
-            System.out.println("Sum of scholarship of " + fullName + " is: ");
-        }
-        return sumOfScholarship;
+        return averageMark == GREAT_AVERAGE_MARK
+            ? INCREASED_SCHOLARSHIP
+            : COMMON_SCHOLARSHIP;
     }
 
     public String getFullName() {
@@ -26,22 +24,6 @@ class Student {
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public char getGroup() {
-        return group;
-    }
-
-    public void setGroup(char group) {
-        this.group = group;
     }
 
     public double getAverageMark() {
@@ -60,5 +42,3 @@ class Student {
         this.sumOfScholarship = sumOfScholarship;
     }
 }
-
-

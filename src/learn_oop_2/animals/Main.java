@@ -3,24 +3,23 @@ package learn_oop_2.animals;
 class Main {
 
     public static void main(String[] args) {
-        Animal[] animalArr = new Animal[3];
-        Vet vet = new Vet();
+        Animal[] animals = new Animal[3];
+        animals[0] = new Cat("Ahri");
+        animals[1] = new Chicken("Coco");
+        animals[2] = new Dog("Jerri");
 
-        animalArr[0] = new Cat("Ahri");
-        animalArr[1] = new Chicken("Coco");
-        animalArr[2] = new Dog("Jerri");
-
-//        for (int index = 0; index < animalArr.length; index++) {
-//            vet.treatAnimal(animalArr[index]);
+//        for (int index = 0; index < animals.length; index++) {
+//            vet.treatAnimal(animals[index]);
 //        }
 
-        for (Animal animal : animalArr) {
-            vet.treatAnimal(animal);
+        Veterinary veterinary = new Veterinary();
+        for (Animal animal : animals) {
+            veterinary.treatAnimal(animal);
         }
 
         System.out.println("-----------");
 
-        for (Animal animal : animalArr) {
+        for (Animal animal : animals) {
             animal.makeNoise();
             animal.eat();
             System.out.println("--------");

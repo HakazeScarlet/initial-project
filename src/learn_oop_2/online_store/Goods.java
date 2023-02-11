@@ -2,9 +2,9 @@ package learn_oop_2.online_store;
 
 class Goods {
 
-    private String name;
-    private double price;
-    private double rating;
+    private final String name;
+    private final double price;
+    private final double rating;
 
     public Goods(String name, double price, double rating) {
         this.name = name;

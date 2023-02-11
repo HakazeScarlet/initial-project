@@ -2,21 +2,22 @@ package learn_oop_2.animals;
 
 class Dog extends Animal {
 
-    protected Dog(String name) {
+    public Dog(String name) {
         this.name = name;
     }
 
-    public void makeNoise() {
+    @Override
+    protected void makeNoise() {
         System.out.println("Dog say woof");
     }
 
-    public void eat() {
+    @Override
+    protected void eat() {
         System.out.println("Dog eat a meat");
     }
 
-    String getDescription() {
+    @Override
+    protected String getDescription() {
         return name;
     }
-
 }
-
