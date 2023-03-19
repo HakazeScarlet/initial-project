@@ -1,3 +1,5 @@
+package simple_tasks;
+
 import java.util.Scanner;
 
 public class TrianglePerimeter {
