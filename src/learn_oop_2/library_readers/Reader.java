@@ -32,17 +32,21 @@ class Reader {
         }
     }
 
-    // TODO: Correct next 3 methods, see examples above and re-read the task
-
-    void returnBook(int amountOfBooks) {
-        System.out.println(fullName + " return " + amountOfBooks + " book(s)");
-    }
-
-    void returnBook(String bookTitle) {
-        System.out.println(fullName + " return " + bookTitle);
+    void returnBook(int ... amountOfBooks) {
+        System.out.println(fullName + " return books: ");
+        for (int amount : amountOfBooks) {
+            System.out.printf("%s", amount);
+        }
     }
 
     void returnBook(Book book) {
-        System.out.println(fullName + " return book(s): " + book);
+        System.out.printf("%s", fullName + " return next book: " + bookTitle);
+    }
+
+    void returnBook(Book ... books) {
+        System.out.println(fullName + " return next books: ");
+        for (Book  book : books) {
+            System.out.printf("%s", book.getTitle());
+        }
     }
 }
