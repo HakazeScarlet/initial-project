@@ -3,10 +3,10 @@ package simple_tasks;
 public class PowersOfTwoCalculator {
 
     public static void main(String[] args) {
-        print(makeDegree(5));
+        print(pow(5));
     }
 
-    private static double[] makeDegree(int number) {
+    private static double[] pow(int number) {
         double[] powersOf2 = new double[number + 1];
         for (int i = 0; i <= number; i++) {
             double power = Math.pow(2, i);

@@ -13,23 +13,23 @@ public class MaxNumberDeterminant {
         System.out.printf("%s", "Add third number: ");
         int third = scanner.nextInt();
 
-        manually(first, second, third);
-        withLibrary(first, second, third);
+        print(manually(first, second, third));
+
+        print(withLibrary(first, second, third));
     }
 
-    private static void withLibrary(int first, int second, int third) {
-        System.out.println(Math.max(first, Math.max(second, third)));
+    private static int withLibrary(int first, int second, int third) {
+        return Math.max(first, Math.max(second, third));
     }
 
-    private static void manually(int first, int second, int third) {
+    private static int manually(int first, int second, int third) {
         if (first > second && first > third) {
-            print(first);
+            return first;
         } else if (second > first && second > third) {
-            print(second);
+            return second;
         } else {
-            print(third);
+            return third;
         }
-        System.out.println();
     }
 
     private static void print(int number) {
