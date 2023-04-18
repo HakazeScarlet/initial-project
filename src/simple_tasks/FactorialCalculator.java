@@ -9,21 +9,23 @@ public class FactorialCalculator {
     }
 
     private static int findFactorial(int number) {
-        if (number == 1) {
-            return 0;
+        if (number == 0) {
+            return 1;
         }
 
         int amount = 1;
         for (int i = 1; i <= number; i++) {
             amount = amount * i;
         }
-        return amount;
+
+        return number;
     }
 
     private static int findFactorialRecursion(int number) {
-        if (number == 1) {
+        if (number == 0) {
             return 1;
         }
+
         return number * findFactorialRecursion(number - 1);
     }
 }
