@@ -7,7 +7,7 @@ public class Calculator {
         System.out.println(subtract(6, 7));
         System.out.println(multiply(6, 3));
         System.out.println(divide(6, 2));
-    }
+        }
 
     public static double add(double first, double second) {
         return first + second;
