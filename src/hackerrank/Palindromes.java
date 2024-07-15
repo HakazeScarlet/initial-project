@@ -25,7 +25,7 @@ public class Palindromes {
             k++;
         }
 
-        if (Arrays.equals(charArr, charArrUn) == true) {
+        if (Arrays.equals(charArr, charArrUn)) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
